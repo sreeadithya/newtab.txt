@@ -1,4 +1,5 @@
 yo welcome to newtab.txt
+
 its a simple product that i’ve built where you can just write shit down in the new tab. its been done better but i want to give it a shot nonetheless
 all your text is stored to the chrome storage and doesn’t leave your computer, it’ll stay there even if you close the tab.
     
@@ -19,4 +20,4 @@ stuff that's still on the roadmap:
 
 it'll take a while since i'm very inexperienced with html, css and js but i think it'll be worth the while. stuff will be rolled out in the coming days.
 
-check out my stuff at https://adithya.work or @sreeadithyap on instagram
+check out my stuff at [adithya.work](https://adithya.work/@blank) or [@sreeadithyap](https://www.instagram.com/sreeadithyap/@blank) on instagram
