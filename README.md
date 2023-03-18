@@ -20,4 +20,4 @@ stuff that's still on the roadmap:
 
 it'll take a while since i'm very inexperienced with html, css and js but i think it'll be worth the while. stuff will be rolled out in the coming days.
 
-check out my stuff at [adithya.work](https://adithya.work/@blank) or [@sreeadithyap](https://www.instagram.com/sreeadithyap/@blank) on instagram
+check out my stuff at [adithya.work](https://adithya.work/) or [@sreeadithyap](https://www.instagram.com/sreeadithyap/) on instagram
