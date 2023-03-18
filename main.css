@@ -1,0 +1,19 @@
+html body {
+    background-color: white;
+    overflow: hidden;
+}
+
+textarea {
+    width: calc(100vw - 8vh);
+    height: calc(100vh - 4vh);
+
+    font-size: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    border: none;
+    outline: none;
+
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: -0.07em;
+  }
