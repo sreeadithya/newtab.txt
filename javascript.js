@@ -11,3 +11,5 @@ if (savedValue) {
 textarea.addEventListener('input', () => {
   localStorage.setItem('textareaValue', textarea.value);
 });
+
+//javascript written by openai lol, i'll have to learn how to use js in the future
