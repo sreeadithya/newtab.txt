@@ -1,9 +1,11 @@
 yo welcome to newtab.txt
 
-its a simple product that i’ve built where you can just write shit down in the new tab. its been done better but i want to give it a shot nonetheless
+its a simple product that i’ve built where you can just write shit down in the new tab. its been done better but i want to give it a shot nonetheless.
+
 all your text is stored to the chrome storage and doesn’t leave your computer, it’ll stay there even if you close the tab.
     
 current version: 0.1
+
 so its in a really early stage and only a tiny part of the featureset has been implemented
 
 stuff that's still on the roadmap:
