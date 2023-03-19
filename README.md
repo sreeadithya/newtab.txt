@@ -3,8 +3,15 @@ yo welcome to newtab.txt
 its a simple product that i’ve built where you can just write shit down in the new tab. its been done better but i want to give it a shot nonetheless.
 
 all your text is stored to the chrome storage and doesn’t leave your computer, it’ll stay there even if you close the tab.
-    
-current version: 0.1
+
+![pika-1679159490153-1x](https://user-images.githubusercontent.com/79783628/226122256-ede5e954-f7f9-447c-9828-6d003c0c1222.png)
+
+to install:
+
+    download the latest .zip from the releases page
+    go to chrome://extentions in the address bar
+    turn on developer mode in the top right corner
+    drag and drop that .zip
 
 so its in a really early stage and only a tiny part of the featureset has been implemented
 
@@ -22,4 +29,4 @@ stuff that's still on the roadmap:
 
 it'll take a while since i'm very inexperienced with html, css and js but i think it'll be worth the while. stuff will be rolled out in the coming days.
 
-check out my stuff at [adithya.work](https://adithya.work/) or [@sreeadithyap](https://www.instagram.com/sreeadithyap/) on instagram
+contact me at [gets3211@gmail.com](mailto:gets3211@gmail.com)
