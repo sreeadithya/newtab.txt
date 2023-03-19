@@ -15,3 +15,4 @@ textarea.addEventListener('input', () => {
 //javascript written by openai lol, i'll have to learn how to use js in the future
 // okay cool i think i finally know how git works across computers
 //test something
+//
