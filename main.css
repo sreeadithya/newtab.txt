@@ -17,4 +17,7 @@ textarea {
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: -0.07em;
   }
-/* ignore this pls
+
+.blur {
+  filter: blur(7px);
+}

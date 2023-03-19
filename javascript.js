@@ -16,3 +16,18 @@ textarea.addEventListener('input', () => {
 // okay cool i think i finally know how git works across computers
 //test something
 //
+
+var isBlur = false;
+
+document.addEventListener("keydown", e => {
+  if (
+        isBlur==false
+        && e.ctrlKey
+        && e.key == "b"
+
+  ) {
+    document.getElementById('textarea').classList.add("blur")
+    isBlur==true
+  }
+
+})
