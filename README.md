@@ -1,8 +1,10 @@
 yo welcome to newtab.txt
 
-its a simple product that i’ve built where you can just write shit down in the new tab. its been done better but i want to give it a shot nonetheless.
+its an ultra simple and lightweight product that i’ve built where you can just write shit down in the new tab. its been done better but i want to give it a shot nonetheless.
 
-all your text is stored to the chrome storage and doesn’t leave your computer, it’ll stay there even if you close the tab.
+✦ all your text is stored to the chrome storage and doesn’t leave your computer, it’ll stay there even if you close the tab.\
+✦ `ctrl + b` in order to blur the screen to act as a privacy filter for when you're afk\
+✦ more features to be added soon!
 
 ![pika-1679159490153-1x](https://user-images.githubusercontent.com/79783628/226122256-ede5e954-f7f9-447c-9828-6d003c0c1222.png)
 
@@ -17,15 +19,17 @@ so its in a really early stage and only a tiny part of the featureset has been i
 
 stuff that's still on the roadmap:
 
+    hover to left side of screen in order to show tiny menu
+    darkmode toggle
+    change it to work on javascript instead of html textarea so that future features can be possible
+
     typing hashtag creates a task
-    convert links into clickable links
+    convert links into links
     bold italic and underline
     bullet points
-    blur the screen with shortcut
-    a hover-to-reveal minimalistic sidebar
-    darkmode toggle
+
     font changer
-    ability to download the text
+    download functionality
 
 it'll take a while since i'm very inexperienced with html, css and js but i think it'll be worth the while. stuff will be rolled out in the coming days.
 
