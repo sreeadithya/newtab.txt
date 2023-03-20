@@ -2,7 +2,7 @@
  "manifest_version": 3,
     "name": "newtab.txt",
     "description": "the simplest damn notepad for your browser",
-    "version": "0.1",
+    "version": "0.1.1",
 
         "chrome_url_overrides": {
             "newtab": "newpage.html"
@@ -11,6 +11,6 @@
     "icons": {
         "16": "/images/16.png",
         "48": "/images/48.png",
-        "128": "/images/128.png" 
+        "128": "/images/128.png"
     }
 }
