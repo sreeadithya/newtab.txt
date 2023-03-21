@@ -21,3 +21,32 @@ document.addEventListener("keydown", e => {
     isBlur=!isBlur
   }
 })
+
+
+const sidebar = document.getElementById('sidebar');
+
+const hoverchecker = document.getElementById('hoverchecker');
+
+hoverchecker.addEventListener('mouseover', function handleMouseOverEvent() {
+  sidebar.style.visibility = 'visible'
+});
+
+hoverchecker.addEventListener('mouseout', function handleMouseOutEvent() {
+  sidebar.style.visibility = 'hidden'
+});
+
+const body = document.getElementById('body');
+
+const darkmodebtn = document.getElementById('darkmodebtn');
+
+var isDarkMode = false;
+
+if (!isDarkMode) {
+    body.style.backgroundColor = "#121212";
+    textarea.style.color = "#FFFFFF"
+  })
+}
+else {
+
+}
+darkmodebtn.addEventListener('click', function changeStyle() {
