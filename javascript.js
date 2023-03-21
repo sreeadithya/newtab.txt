@@ -45,6 +45,19 @@ isBlur=!isBlur
 })
 
 
+const fontsidebar = document.getElementById('fontsidebar');
+
+function fontselectorclick() {
+  fontsidebar.style.visibility = 'visible'
+}
+
+const fonthoverchecker = document.getElementById('fontsidebar')
+
+
+fonthoverchecker.addEventListener('mouseout', function handleMouseOutEvent() {
+  fontsidebar.style.visibility = 'hidden'
+})
+
 
 
 const sidebar = document.getElementById('sidebar');
@@ -66,7 +79,7 @@ const darkmodebtn = document.getElementById('darkmodebtn');
 
 const sidebutton = document.querySelectorAll('.sidebutton');
 
-
+const dropdown = document.getElementById('dropdown')
 
 
 isDarkModeStorage = JSON.parse(localStorage.getItem('isDarkModeStorage'))
@@ -79,6 +92,9 @@ if (isDarkModeStorage == true) {
     sidebar.style.outline = '2px solid white'
     sidebutton.forEach(sidebutton => {
     sidebutton.style.color = "#FFFFFF";
+    dropdown.style.color = '#FFFFFF';
+    dropdown.style.backgroundColor = '#121212';
+    fontsidebar.style.outline = '2px solid #FFFFFF'
   });
 }
 else {
@@ -93,7 +109,10 @@ darkmodebtn.addEventListener('click', function(){
         sidebar.style.backgroundColor = '#121212'
         sidebar.style.outline = '2px solid white'
         sidebutton.forEach(sidebutton => {
-          sidebutton.style.color = "#FFFFFF";
+        sidebutton.style.color = "#FFFFFF";
+        dropdown.style.color = '#FFFFFF';
+        dropdown.style.backgroundColor = '#121212';
+        fontsidebar.style.outline = '2px solid #FFFFFF'
         });
   }
   else {
@@ -102,7 +121,10 @@ darkmodebtn.addEventListener('click', function(){
         sidebar.style.backgroundColor = '#FFFFFF'
         sidebar.style.outline = '2px solid black'
         sidebutton.forEach(sidebutton => {
-          sidebutton.style.color = "#121212";
+        sidebutton.style.color = "#121212";
+        dropdown.style.color = '#121212';
+        dropdown.style.backgroundColor = '#FFFFFF';
+        fontsidebar.style.outline = '2px solid #121212'
         });
   }
   isDarkMode = !isDarkMode
@@ -115,3 +137,8 @@ function downloadtext() {
          });
          saveAs(blob, "newtab.txt");
       }
+
+
+function opt2() {
+  console.log("lol")
+}

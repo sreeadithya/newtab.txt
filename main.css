@@ -1,5 +1,5 @@
+
 * {
-  font-family: 'Times New Roman', Times, serif;
 }
 
 html body {
@@ -23,6 +23,8 @@ textarea {
     letter-spacing: -0.07em;
     resize: none;
     background-color: #FFFFFF00;
+    font-family: 'Courier New', Courier, monospace
+
   }
 .blur {
   filter: blur(7px);
@@ -49,8 +51,30 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 27vh;
+  height: 13em;
+  width: 17em;
+}
 
+.fontsidebar {
+  top: 5.5em;
+  left: 17.5em;
+  position: fixed;
+  margin-top: 4vh;
+  padding: 1px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 5px;
+  outline: 2px solid black;
+  background-color: #FFFFFF00;
+  visibility: hidden;
+}
+
+.dropdown {
+  background-color: #FFFFFF00;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #000000;
 }
 
 
@@ -59,7 +83,7 @@ button {
   top: 0;
   left: 0;
   width: 2vw;
-  height: 27vh;
+  height: 13em;
   position: fixed;
   margin-top: 4vh;
 }

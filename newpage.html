@@ -7,23 +7,44 @@
     <title>newtab.txt</title>
     <link rel="stylesheet" href="main.css">
     <script src="javascript.js" defer></script>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin = "anonymous" referrerpolicy = "no-referrer"> </script>
+    <script src = "FileSaver.min.js"> </script>
 </head>
 
 <body id="body">
 
-<textarea placeholder="" id="textarea"></textarea>
+<textarea placeholder="" id="textarea" class="apply-font"></textarea>
 
 <div class="hoverchecker" id="hoverchecker">
+
   <div class="sidebar" id="sidebar">
     <button class="sidebutton" id="darkmodebtn">darkmode toggle</button>
     <button class="sidebutton" id="downloadtxt" onclick="downloadtext();">download text</button>
-    <button class="sidebutton" id="changefont">change font</button>
+    <button class="sidebutton" id="changefont" onclick="fontselectorclick()">change font</button>
     <hr class="divider">
     <button class="sidebutton" id="madeby">made by <a href="https://github.com/sreeadithya" target='_blank'>translate</a> </button>
     <button class="sidebutton" id="coffee"><a href="https://ko-fi.com/translate" target='_blank'>buy me a coffee</a> </button>
   </div>
+
 </div>
+
+
+<div class="fontsidebar" id="fontsidebar">
+  <select name="font" class="dropdown" id="dropdown">
+    <option id="opt1">times new roman</option>
+    <option id="opt2">arial</option>
+    <option id="opt3">verdana</option>
+    <option id="opt4">georgia</option>
+    <option id="opt5">helvetica</option>
+    <option id="opt6">courier new</option>
+    <option id="opt7">tahoma</option>
+    <option id="opt8">trebuchet ms</option>
+    <option id="opt9">calibri</option>
+    <option id="opt10">cambria</option>
+
+
+  </select>
+</div>
+
 
 
 
