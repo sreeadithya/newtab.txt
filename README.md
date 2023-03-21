@@ -1,6 +1,6 @@
 yo welcome to newtab.txt
 
-its an ultra simple and lightweight product that i’ve built where you can just write shit down in the new tab. its been done better but i want to give it a shot nonetheless.
+its an ultra simple and lightweight product that i’ve built where you can just write shit down in the new tab. i want to make it so that its something i would use on a daily basis. it'll take a while to get to the final 1.0 release since i'm very inexperienced with html, css and js but i think it'll be worth the while. stuff will be rolled out soon!
 
 ✦ all your text is stored to the chrome storage and doesn’t leave your computer, it’ll stay there even if you close the tab.\
 ✦ `ctrl + b` in order to blur the screen to act as a privacy filter for when you're afk\
@@ -31,6 +31,5 @@ stuff that's still on the roadmap:
     font changer
     download functionality
 
-it'll take a while since i'm very inexperienced with html, css and js but i think it'll be worth the while. stuff will be rolled out in the coming days.
 
 contact me at [gets3211@gmail.com](mailto:gets3211@gmail.com)
