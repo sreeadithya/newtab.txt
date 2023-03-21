@@ -79,7 +79,7 @@ button {
   margin-bottom: -0.4vh;
 }
 
-#downloadtxt, #changefont {
+#changefont {
   cursor: not-allowed;
 }
 #madeby, #coffee {

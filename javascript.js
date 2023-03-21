@@ -1,3 +1,5 @@
+
+
 const textareaquery = document.getElementById('textarea');
 const savedValue = localStorage.getItem('textareaValue');
 
@@ -11,7 +13,6 @@ textareaquery.addEventListener('input', () => {
 });
 
 const textarea = document.getElementById('textarea')
-
 
 
 let isBlurRefresh = !JSON.parse(localStorage.getItem('isBlurRefresh'))
@@ -66,14 +67,17 @@ const darkmodebtn = document.getElementById('darkmodebtn');
 const sidebutton = document.querySelectorAll('.sidebutton');
 
 
+
+
 isDarkModeStorage = JSON.parse(localStorage.getItem('isDarkModeStorage'))
 if (isDarkModeStorage == true) {
   var isDarkMode = true;
-  textarea.style.color = "#FFFFFF";
-  body.style.backgroundColor = "#121212";
-  sidebar.style.backgroundColor = '#121212'
-  sidebar.style.outline = '2px solid white'
-  sidebutton.forEach(sidebutton => {
+
+    textarea.style.color = "#FFFFFF";
+    body.style.backgroundColor = "#121212";
+    sidebar.style.backgroundColor = '#121212'
+    sidebar.style.outline = '2px solid white'
+    sidebutton.forEach(sidebutton => {
     sidebutton.style.color = "#FFFFFF";
   });
 }
@@ -104,3 +108,10 @@ darkmodebtn.addEventListener('click', function(){
   isDarkMode = !isDarkMode
   localStorage.setItem("isDarkModeStorage", isDarkMode)
 })
+
+function downloadtext() {
+         var blob = new Blob([textarea.value], {
+            type: "text/plain;charset=utf-8",
+         });
+         saveAs(blob, "newtab.txt");
+      }
