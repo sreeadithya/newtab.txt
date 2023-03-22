@@ -182,44 +182,70 @@ function downloadtext() {
       }
 
 
+
+
+var fontlocalstorage;
+if (fontlocalstorage !== null) {
+  var fontindex = localStorage.getItem('fontlocalstorage')
+  var fontlocalstorage = dropdown.options[fontindex];
+  body.style.fontFamily = fontlocalstorage.value
+  dropdown.selectedIndex = localStorage.getItem('fontlocalstorage')
+}
+
+
 dropdown.addEventListener('change', function() {
-  const selectedOption = dropdown.options[dropdown.selectedIndex].value
 
-  if (selectedOption == 'times new roman') {
-    body.style.fontFamily = 'Times New Roman';
-  }
-  else if (selectedOption == 'arial') {
-    body.style.fontFamily = 'Arial';
-  }
-  else if (selectedOption == 'verdana') {
-    body.style.fontFamily = 'Verdana';
-  }
-  else if (selectedOption == 'lucida console') {
-    body.style.fontFamily = 'Lucida Console';
-  }
-  else if (selectedOption == 'century gothic') {
-    body.style.fontFamily = 'Century Gothic';
-  }
-  else if (selectedOption == 'helvetica') {
-    body.style.fontFamily = 'Helvetica';
-  }
-  else if (selectedOption == 'courier new') {
-    body.style.fontFamily = 'Courier New';
-  }
-  else if (selectedOption == 'tahoma') {
-    body.style.fontFamily = 'Tahoma';
-  }
-  else if (selectedOption == 'trebuchet ms') {
-    body.style.fontFamily = 'Trebuchet MS';
-  }
-  else if (selectedOption == 'calibri') {
-    body.style.fontFamily = 'Calibri';
-  }
-  else if (selectedOption == 'cambria') {
-    body.style.fontFamily = 'Cambria';
-  }
-  else if (selectedOption == 'ms sans serif') {
-    body.style.fontFamily = 'MS Sans Serif';
+    const selectedOption = dropdown.options[dropdown.selectedIndex].value
+
+    if (selectedOption == 'times new roman') {
+      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
+      body.style.fontFamily = 'times new roman'
+    }
+
+    if (selectedOption == 'arial') {
+      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
+      body.style.fontFamily = 'arial'
+    }
+    else if (selectedOption == 'verdana') {
+      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
+      body.style.fontFamily = 'verdana'
+    }
+    else if (selectedOption == 'lucida console') {
+      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
+      body.style.fontFamily = 'lucida console'
+    }
+    else if (selectedOption == 'century gothic') {
+      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
+      body.style.fontFamily = 'century gothic'
+    }
+    else if (selectedOption == 'helvetica') {
+      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
+      body.style.fontFamily = 'helvetica'
+    }
+    else if (selectedOption == 'courier new') {
+      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
+      body.style.fontFamily = 'courier new'
+    }
+    else if (selectedOption == 'tahoma') {
+      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
+      body.style.fontFamily = 'tahoma'
+    }
+    else if (selectedOption == 'trebuchet ms') {
+      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
+      body.style.fontFamily = 'trebuchet ms'
+    }
+    else if (selectedOption == 'calibri') {
+      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
+      body.style.fontFamily = 'calibri'
+    }
+    else if (selectedOption == 'cambria') {
+      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
+      body.style.fontFamily = 'cambria'
+    }
+    else if (selectedOption == 'ms sans serif') {
+      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
+      body.style.fontFamily = 'ms sans serif'
+    }
   }
 
-})
+)
