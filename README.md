@@ -1,14 +1,13 @@
-"keeping this text in here just in case if you're reading through the commit history of this repo.
-i've decided to not update the notepad to use only javascript instead of the html textarea element. this would have allowed me to add certain functions such as creating todo items, making text bold, italicized, underlined, automatically convert links into clickable links, bullet points, etc. i feel like that would make the product more bloated as i would be then converting it into a rich text product and then i also dont want to spend too much time on this as im still learning to code. maybe someday ill update it. final version coming soon after this"
-
-
 yo welcome to newtab.txt
 
-its an ultra simple and lightweight product that i’ve built where you can just write shit down in the new tab. i want to make it so that its something i would use on a daily basis. it'll take a while to get to the final 1.0 release since i'm very inexperienced with html, css and js but i think it'll be worth the while. stuff will be rolled out soon!
+its an ultra simple and lightweight product that i’ve built where you can just write shit down in the new tab. 1.0 has just released and i really love how it has turned out. developing this was definitely a challenge since i'm very inexperienced with programming. i hope that anyone who stumbles upon this finds this useful. thank you!\
+i wont be developing this further since i feel the product has all the features it needs to have considering its requirement and aesthetic.\
 
 ✦ all your text is stored to the chrome storage and doesn’t leave your computer, it’ll stay there even if you close the tab.\
+✦ hover to the top left of the screen for the sidebar!\
+✦ ability to use darkmode and download the text as a .txt file\
+✦ change the font to fit your aesthetic\
 ✦ `ctrl + b` in order to blur the screen to act as a privacy filter for when you're afk\
-✦ more features to be added soon!
 
 ![pika-1679159490153-1x](https://user-images.githubusercontent.com/79783628/226122256-ede5e954-f7f9-447c-9828-6d003c0c1222.png)
 
