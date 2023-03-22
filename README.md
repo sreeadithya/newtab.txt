@@ -8,7 +8,7 @@ i wont be developing this further since i feel the product has all the features 
 
 
 
- 
+
 
 ![1](https://user-images.githubusercontent.com/79783628/226945947-5ee5c805-34e1-43fa-8346-74389d848365.png)✦ all your text is stored to the chrome storage and doesn’t <br> leave your computer, it’ll stay there even if you close the tab.|![3](https://user-images.githubusercontent.com/79783628/226946095-8b41738f-8c2f-41e8-b728-64c3308b440a.png)✦ beautiful darkmode                                         
 :-------------------------:|:-------------------------:
@@ -31,8 +31,8 @@ to install:
 2. go to `chrome://extentions` in the address bar
 3. turn on developer mode in the top right corner
 4. drag and drop that .zip
-    
-    
+
+
 do let me know of any bugs and i'd love to work on fixing them
 
 contact me at [gets3211@gmail.com](mailto:gets3211@gmail.com)
