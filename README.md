@@ -1,3 +1,7 @@
+"keeping this text in here just in case if you're reading through the commit history of this repo.
+i've decided to not update the notepad to use only javascript instead of the html textarea element. this would have allowed me to add certain functions such as creating todo items, making text bold, italicized, underlined, automatically convert links into clickable links, bullet points, etc. i feel like that would make the product more bloated as i would be then converting it into a rich text product and then i also dont want to spend too much time on this as im still learning to code. maybe someday ill update it. final version coming soon after this"
+
+
 yo welcome to newtab.txt
 
 its an ultra simple and lightweight product that i’ve built where you can just write shit down in the new tab. i want to make it so that its something i would use on a daily basis. it'll take a while to get to the final 1.0 release since i'm very inexperienced with html, css and js but i think it'll be worth the while. stuff will be rolled out soon!

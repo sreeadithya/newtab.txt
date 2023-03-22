@@ -71,13 +71,17 @@ fonthoverchecker.addEventListener('mouseover', function handleMouseOverEvent() {
   clearTimeout(timer);
   fontsidebar.style.visibility = 'visible'
   sidebar.style.visibility = 'visible'
+  sidebar.style.animationName = 'in'
 })
 
 
 fonthoverchecker.addEventListener('mouseout', function handleMouseOutEvent() {
   timer = setTimeout(function () {
     fontsidebar.style.visibility = 'hidden'
+
     sidebar.style.visibility = 'hidden'
+    sidebar.style.animationName = 'out'
+
   }, 50);
 
 })
@@ -87,16 +91,26 @@ fonthoverchecker.addEventListener('mouseout', function handleMouseOutEvent() {
 
 hoverchecker.addEventListener('mouseover', function handleMouseOverEvent() {
   clearTimeout(timer);
+
+  timer2 = setTimeout(function () {
   sidebar.style.visibility = 'visible'
+  sidebar.style.animationName = 'in'
+}, 300);
 });
 
 
 
 hoverchecker.addEventListener('mouseout', function handleMouseOutEvent() {
+clearTimeout(timer2);
 timer = setTimeout(function () {
-  sidebar.style.visibility = 'hidden'
-  sidebar.style.animation = 'animation: slide 0.5s forwards'
+
   fontsidebar.style.visibility = 'hidden'
+  sidebar.style.animationName = 'out'
+
+  setTimeout (function() {
+    sidebar.style.visibility = 'hidden'
+  }, 100)
+
 }, 50);
 });
 
@@ -174,8 +188,9 @@ var fontlocalstorage;
 if (fontlocalstorage !== null) {
   var fontindex = localStorage.getItem('fontlocalstorage')
   var fontlocalstorage = dropdown.options[fontindex];
-  body.style.fontFamily = fontlocalstorage.value
+
   dropdown.selectedIndex = localStorage.getItem('fontlocalstorage')
+  body.style.fontFamily = fontlocalstorage.value;
 }
 
 

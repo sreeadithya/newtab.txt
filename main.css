@@ -55,6 +55,8 @@ button {
   justify-content: space-between;
   height: 15em;
   width: 17em;
+  animation-name: none;
+  animation-duration: 0.1s;
 }
 
 
@@ -94,9 +96,10 @@ button {
 
   top: 0;
   left: 0;
-  width: 2vw;
+  width: 1.4vw;
   height: 13em;
   position: fixed;
+  margin-top: 4vh;
   margin-top: 4vh;
 }
 
@@ -127,4 +130,18 @@ button {
 
 .fontoptions {
   font-family: inherit;
+}
+
+@keyframes in {
+  from {left: -17em;
+  opacity: 0%;}
+
+  to {left: 0em
+  opacity:100%}
+}
+
+@keyframes out {
+  from {left: 0px;}
+  to {left: -17em;
+  opacity: 0;}
 }
