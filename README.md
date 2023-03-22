@@ -28,7 +28,7 @@ i wont be developing this further since i feel the product has all the features 
 to install:
 
 1. download the latest .zip from the releases page
-2. go to `chrome://extentions` in the address bar
+2. go to `chrome://extensions` in the address bar
 3. turn on developer mode in the top right corner
 4. drag and drop that .zip
 
