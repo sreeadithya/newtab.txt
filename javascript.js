@@ -101,18 +101,6 @@ timer = setTimeout(function () {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 const body = document.getElementById('body');
 
 const darkmodebtn = document.getElementById('darkmodebtn');
@@ -129,12 +117,12 @@ if (isDarkModeStorage == true) {
     textarea.style.color = "#FFFFFF";
     body.style.backgroundColor = "#121212";
     sidebar.style.backgroundColor = '#121212'
-    sidebar.style.outline = '2px solid white'
+    sidebar.style.outline = '1.5px solid white'
     sidebutton.forEach(sidebutton => {
     sidebutton.style.color = "#FFFFFF";
     dropdown.style.color = '#FFFFFF';
     dropdown.style.backgroundColor = '#121212';
-    fontsidebar.style.outline = '2px solid #FFFFFF'
+    fontsidebar.style.outline = '1.5px solid #FFFFFF'
     fontsidebar.style.backgroundColor = '#121212'
   });
 }
@@ -148,12 +136,12 @@ darkmodebtn.addEventListener('click', function(){
         textarea.style.color = "#FFFFFF";
         body.style.backgroundColor = "#121212";
         sidebar.style.backgroundColor = '#121212'
-        sidebar.style.outline = '2px solid white'
+        sidebar.style.outline = '1.5px solid white'
         sidebutton.forEach(sidebutton => {
         sidebutton.style.color = "#FFFFFF";
         dropdown.style.color = '#FFFFFF';
         dropdown.style.backgroundColor = '#121212';
-        fontsidebar.style.outline = '2px solid #FFFFFF'
+        fontsidebar.style.outline = '1.5px solid #FFFFFF'
         fontsidebar.style.backgroundColor = '#121212'
         });
   }
@@ -180,8 +168,6 @@ function downloadtext() {
          });
          saveAs(blob, "newtab.txt");
       }
-
-
 
 
 var fontlocalstorage;

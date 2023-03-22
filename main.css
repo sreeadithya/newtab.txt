@@ -44,8 +44,8 @@ button {
   left: 0;
   position: fixed;
   margin-top: 4vh;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 5px;
+  padding-bottom: 6px;
   padding-right: 5px;
   outline: 2px solid black;
   background-color: #FFFFFF;
@@ -53,13 +53,13 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 13em;
+  height: 15em;
   width: 17em;
 }
 
 
 .fontsidebar {
-  top: 5.5em;
+  top: 5.4em;
   left: 17.5em;
   position: fixed;
   margin-top: 4vh;
@@ -86,7 +86,9 @@ button {
 
 }
 
-
+.dropdown {
+  box-shadow: none;
+}
 
 .hoverchecker {
 
@@ -114,8 +116,13 @@ button {
 }
 
 
-#madeby, #coffee {
+#madeby, #coffee, #text {
   cursor: auto;
+}
+
+#text {
+  margin-top: -0.2vh;
+  font-size: 1em;
 }
 
 .fontoptions {

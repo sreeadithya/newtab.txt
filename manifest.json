@@ -2,7 +2,7 @@
  "manifest_version": 3,
     "name": "newtab.txt",
     "description": "the simplest damn notepad for your browser",
-    "version": "0.1.1",
+    "version": "1.0.0",
 
         "chrome_url_overrides": {
             "newtab": "newpage.html"
