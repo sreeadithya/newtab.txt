@@ -1,6 +1,6 @@
 yo welcome to newtab.txt
 
-its an ultra simple and lightweight product that i’ve built where you can just write shit down in the new tab. works on basically any browser. i just released the final 1.0 and i love how it turned out\
+its an ultra simple and lightweight product that i’ve built where you can just write shit down in the new tab. works on basically any browser and without an internet connection. i just released the final 1.0 and i love how it turned out\
 developing this was definitely a challenge since i'm very inexperienced with programming but i hope that anyone who stumbles upon this finds this useful. thank you!
 
 i wont be developing this further since i feel the product has all the features it needs to have considering its aesthetic and what i set out to make.
@@ -36,3 +36,5 @@ to install:
 do let me know of any bugs and i'd love to work on fixing them
 
 contact me at [gets3211@gmail.com](mailto:gets3211@gmail.com)
+
+dependencies: uses [fileSaver.js](https://github.com/eligrey/FileSaver.js) locally
