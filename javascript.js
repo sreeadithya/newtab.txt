@@ -61,11 +61,17 @@ var fontsidebaractive = false;
 var timer;
 
 
+const changefont = document.getElementById('changefont')
 
-function fontselectorclick() {
-  fontsidebar.style.visibility = 'visible'
+changefont.addEventListener('click', function() {
+  fontsidebar.style.visibility = 'visible';
   fontsidebaractive = true;
-}
+});
+
+
+
+
+
 
 fonthoverchecker.addEventListener('mouseover', function handleMouseOverEvent() {
   clearTimeout(timer);
@@ -176,22 +182,15 @@ darkmodebtn.addEventListener('click', function(){
   localStorage.setItem("isDarkModeStorage", isDarkMode)
 })
 
-function downloadtext() {
+downloadtxt.addEventListener('click', function() {
          var blob = new Blob([textarea.value], {
             type: "text/plain;charset=utf-8",
          });
          saveAs(blob, "newtab.txt");
-      }
+      })
 
 
-var fontlocalstorage;
-if (fontlocalstorage !== null) {
-  var fontindex = localStorage.getItem('fontlocalstorage')
-  var fontlocalstorage = dropdown.options[fontindex];
 
-  dropdown.selectedIndex = localStorage.getItem('fontlocalstorage')
-  body.style.fontFamily = fontlocalstorage.value;
-}
 
 
 dropdown.addEventListener('change', function() {
@@ -247,6 +246,19 @@ dropdown.addEventListener('change', function() {
       localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
       body.style.fontFamily = 'ms sans serif'
     }
+    else {
+      localStorage.setItem("fontlocalstorage", 'times new roman')
+      body.style.fontFamily = 'times new roman'
+    }
   }
 
 )
+
+var fontlocalstorage;
+if (fontlocalstorage !== null) {
+  var fontindex = localStorage.getItem('fontlocalstorage')
+  var fontlocalstorage = dropdown.options[fontindex];
+
+  dropdown.selectedIndex = localStorage.getItem('fontlocalstorage')
+  body.style.fontFamily = fontlocalstorage.value;
+}
