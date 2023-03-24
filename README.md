@@ -1,7 +1,3 @@
-~ another between commit note. i thought i'd leave this project but idk i just wanted to work on it a bit more. now i've changed it from using a textbox to using contenteditable and that allows it to have text styling. also added some shortcuts for all actions except the font changer. i think this will actually be the last one
-
-
-
 yo welcome to newtab.txt
 
 its an ultra simple and lightweight product that i’ve built where you can just write shit down in the new tab. works on basically any browser and without an internet connection. i just released the final 1.0 and i love how it turned out\
@@ -12,19 +8,19 @@ i wont be developing this further since i feel the product has all the features 
 
 
 
+✦ bold, italic and underline with ctrl+b/i/u
 
-
-![1](https://user-images.githubusercontent.com/79783628/226945947-5ee5c805-34e1-43fa-8346-74389d848365.png)✦ all your text is stored and stays there even if you close the tab.|![3](https://user-images.githubusercontent.com/79783628/226946095-8b41738f-8c2f-41e8-b728-64c3308b440a.png)✦ beautiful darkmode                                         
+![Frame 1](https://user-images.githubusercontent.com/79783628/227476030-4579a135-f25e-45d6-b28d-273eddacb222.png)✦ all your text is stored and stays there even if you close the tab.|![Frame 2](https://user-images.githubusercontent.com/79783628/227476100-8bc77336-c7c5-41e6-a8a0-9d3482c99d66.png)✦ beautiful darkmode (`alt+q`)
 :-------------------------:|:-------------------------:
 
-![2](https://user-images.githubusercontent.com/79783628/226946304-6c822273-8057-4d3a-adaf-7663c488b758.png)✦ hover to the top left of the screen for the sidebar!
+![Frame 3](https://user-images.githubusercontent.com/79783628/227476177-a8305939-1c86-47c9-b012-c42b538d5d5a.png)✦ hover to the top left of the screen for the sidebar!
 :-------------------------:
 
-![4](https://user-images.githubusercontent.com/79783628/226946446-a5fa8431-46fa-41c9-bfb8-ae41d73da31e.png)✦ `ctrl + b` in order to blur the screen to act as a privacy filter for when you're afk|![5](https://user-images.githubusercontent.com/79783628/226946541-fa745615-7664-4c24-833e-4785daef7c74.png)✦ ability to download the text as a .txt file
+![Frame 4](https://user-images.githubusercontent.com/79783628/227476280-b7a0c893-8a28-49ec-aaa8-d0243b62e1d8.png)✦ `ctrl+q` to blur the screen to act as a privacy filter for when you're afk|![5](https://user-images.githubusercontent.com/79783628/226946541-fa745615-7664-4c24-833e-4785daef7c74.png)✦ download your text as a .txt file (`ctrl+s`)
 :-------------------------:|:-------------------------:
 
 
-![6](https://user-images.githubusercontent.com/79783628/226946601-344cc902-5b95-40a5-8dab-f5ab2a6c8a05.png)✦ change the font to fit your aesthetic
+![Frame 5](https://user-images.githubusercontent.com/79783628/227476963-d067476e-d23c-43df-9264-4fefe1ec1ff3.png)✦ change the font to fit your aesthetic
 :-------------------------:
 
 
