@@ -12,14 +12,14 @@ a {
   color: inherit;
 }
 
-textarea {
+#textarea {
     width: calc(100vw - 8vh);
     height: calc(100vh - 4vh);
     font-size: 2em;
     color: black;
     padding-left: 1em;
     padding-right: 1em;
-    padding-top: 0.5em;
+    padding-top: 0em;
     border: none;
     outline: none;
     resize: none;
@@ -125,7 +125,14 @@ button {
 
 #text {
   margin-top: -0.2vh;
-  font-size: 1em;
+  font-size: 1.2em;
+  opacity: 80%;
+}
+
+.text {
+  font-size: 0.8em;
+  font-family: inherit;
+  opacity: 80%;
 }
 
 .fontoptions {

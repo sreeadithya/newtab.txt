@@ -1,18 +1,15 @@
+var textarea = document.getElementById('textarea');
 
+var savedValue = localStorage.getItem('textareaValue');
 
-const textareaquery = document.getElementById('textarea');
-const savedValue = localStorage.getItem('textareaValue');
-
-
-if (savedValue) {
-  textareaquery.value = savedValue;
+if (savedValue !== null) {
+  textarea.innerHTML = savedValue;
 }
 
-textareaquery.addEventListener('input', () => {
-  localStorage.setItem('textareaValue', textarea.value);
+textarea.addEventListener('input', () => {
+  localStorage.setItem('textareaValue', textarea.innerHTML);
 });
 
-const textarea = document.getElementById('textarea')
 
 
 let isBlurRefresh = !JSON.parse(localStorage.getItem('isBlurRefresh'))
@@ -29,7 +26,7 @@ else {
 
 
 document.addEventListener("keydown", e => {
-  if (e.ctrlKey && e.key == "b") {
+  if (e.ctrlKey && e.key == "q") {
 
       if (!isBlur) {
         textarea.classList.add("blur")
@@ -43,6 +40,35 @@ isBlur=!isBlur
   }
   localStorage.setItem('isBlurRefresh', isBlur)
 })
+
+
+
+
+document.addEventListener("keydown", e => {
+  if (e.altKey && e.key == "q") {
+
+      if (!isDarkMode) {
+        let isDarkMode = true
+        darkmodetoggle1()
+      }
+      else if (isDarkMode) {
+        let isDarkMode = false
+        darkmodetoggle2()
+      }
+isDarkMode=!isDarkMode
+  }
+  localStorage.setItem('isDarkModeStorage', isDarkMode)
+})
+
+
+document.addEventListener("keydown", e => {
+  if (e.ctrlKey && e.key == "s") {
+    e.preventDefault();
+
+downloadtxtaction()
+
+}})
+
 
 
 const fontsidebar = document.getElementById('fontsidebar');
@@ -130,63 +156,65 @@ const sidebutton = document.querySelectorAll('.sidebutton');
 const dropdown = document.getElementById('dropdown')
 
 
+function darkmodetoggle1() {
+  textarea.style.color = "#FFFFFF";
+  body.style.backgroundColor = "#121212";
+  sidebar.style.backgroundColor = '#121212'
+  sidebar.style.outline = '1.5px solid white'
+  sidebutton.forEach(sidebutton => {
+  sidebutton.style.color = "#FFFFFF";
+  dropdown.style.color = '#FFFFFF';
+  dropdown.style.backgroundColor = '#121212';
+  fontsidebar.style.outline = '1.5px solid #FFFFFF'
+  fontsidebar.style.backgroundColor = '#121212'
+})}
+
+function darkmodetoggle2() {
+  textarea.style.color = "#121212";
+  body.style.backgroundColor = "#FFFFFF";
+  sidebar.style.backgroundColor = '#FFFFFF'
+  sidebar.style.outline = '2px solid black'
+  sidebutton.forEach(sidebutton => {
+  sidebutton.style.color = "#121212";
+  dropdown.style.color = '#121212';
+  dropdown.style.backgroundColor = '#FFFFFF';
+  fontsidebar.style.outline = '2px solid #121212'
+  fontsidebar.style.backgroundColor = '#FFFFFF'
+  })}
+
 isDarkModeStorage = JSON.parse(localStorage.getItem('isDarkModeStorage'))
 if (isDarkModeStorage == true) {
   var isDarkMode = true;
-
-    textarea.style.color = "#FFFFFF";
-    body.style.backgroundColor = "#121212";
-    sidebar.style.backgroundColor = '#121212'
-    sidebar.style.outline = '1.5px solid white'
-    sidebutton.forEach(sidebutton => {
-    sidebutton.style.color = "#FFFFFF";
-    dropdown.style.color = '#FFFFFF';
-    dropdown.style.backgroundColor = '#121212';
-    fontsidebar.style.outline = '1.5px solid #FFFFFF'
-    fontsidebar.style.backgroundColor = '#121212'
-  });
-}
+  darkmodetoggle1()
+  }
 else {
   var isDarkMode = false;
 }
 
 
 darkmodebtn.addEventListener('click', function(){
+
   if (!isDarkMode) {
-        textarea.style.color = "#FFFFFF";
-        body.style.backgroundColor = "#121212";
-        sidebar.style.backgroundColor = '#121212'
-        sidebar.style.outline = '1.5px solid white'
-        sidebutton.forEach(sidebutton => {
-        sidebutton.style.color = "#FFFFFF";
-        dropdown.style.color = '#FFFFFF';
-        dropdown.style.backgroundColor = '#121212';
-        fontsidebar.style.outline = '1.5px solid #FFFFFF'
-        fontsidebar.style.backgroundColor = '#121212'
-        });
+        darkmodetoggle1()
   }
   else {
-        textarea.style.color = "#121212";
-        body.style.backgroundColor = "#FFFFFF";
-        sidebar.style.backgroundColor = '#FFFFFF'
-        sidebar.style.outline = '2px solid black'
-        sidebutton.forEach(sidebutton => {
-        sidebutton.style.color = "#121212";
-        dropdown.style.color = '#121212';
-        dropdown.style.backgroundColor = '#FFFFFF';
-        fontsidebar.style.outline = '2px solid #121212'
-        fontsidebar.style.backgroundColor = '#FFFFFF'
-        });
+    darkmodetoggle2()
+
+
   }
   isDarkMode = !isDarkMode
   localStorage.setItem("isDarkModeStorage", isDarkMode)
 })
 
+function downloadtxtaction() {
+  var blob = new Blob([textarea.innerText], {
+     type: "text/plain;charset=utf-8",
+  });
+  saveAs(blob, "newtab.txt");
+}
+
 downloadtxt.addEventListener('click', function() {
-         var blob = new Blob([textarea.value], {
-            type: "text/plain;charset=utf-8",
-         });
-         saveAs(blob, "newtab.txt");
+  downloadtxtaction()
       })
 
 
@@ -197,62 +225,10 @@ dropdown.addEventListener('change', function() {
 
     const selectedOption = dropdown.options[dropdown.selectedIndex].value
 
-    if (selectedOption == 'times new roman') {
-      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
-      body.style.fontFamily = 'times new roman'
-    }
+    localStorage.setItem('fontlocalstorage', dropdown.selectedIndex)
+    body.style.fontFamily = selectedOption
 
-    if (selectedOption == 'arial') {
-      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
-      body.style.fontFamily = 'arial'
-    }
-    else if (selectedOption == 'verdana') {
-      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
-      body.style.fontFamily = 'verdana'
-    }
-    else if (selectedOption == 'lucida console') {
-      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
-      body.style.fontFamily = 'lucida console'
-    }
-    else if (selectedOption == 'century gothic') {
-      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
-      body.style.fontFamily = 'century gothic'
-    }
-    else if (selectedOption == 'helvetica') {
-      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
-      body.style.fontFamily = 'helvetica'
-    }
-    else if (selectedOption == 'courier new') {
-      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
-      body.style.fontFamily = 'courier new'
-    }
-    else if (selectedOption == 'tahoma') {
-      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
-      body.style.fontFamily = 'tahoma'
-    }
-    else if (selectedOption == 'trebuchet ms') {
-      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
-      body.style.fontFamily = 'trebuchet ms'
-    }
-    else if (selectedOption == 'calibri') {
-      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
-      body.style.fontFamily = 'calibri'
-    }
-    else if (selectedOption == 'cambria') {
-      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
-      body.style.fontFamily = 'cambria'
-    }
-    else if (selectedOption == 'ms sans serif') {
-      localStorage.setItem("fontlocalstorage", dropdown.selectedIndex)
-      body.style.fontFamily = 'ms sans serif'
-    }
-    else {
-      localStorage.setItem("fontlocalstorage", 'times new roman')
-      body.style.fontFamily = 'times new roman'
-    }
-  }
-
-)
+})
 
 var fontlocalstorage;
 if (fontlocalstorage !== null) {

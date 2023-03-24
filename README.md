@@ -1,3 +1,7 @@
+~ another between commit note. i thought i'd leave this project but idk i just wanted to work on it a bit more. now i've changed it from using a textbox to using contenteditable and that allows it to have text styling. also added some shortcuts for all actions except the font changer. i think this will actually be the last one
+
+
+
 yo welcome to newtab.txt
 
 its an ultra simple and lightweight product that i’ve built where you can just write shit down in the new tab. works on basically any browser. i just released the final 1.0 and i love how it turned out\
