@@ -238,3 +238,13 @@ if (fontlocalstorage !== null) {
   dropdown.selectedIndex = localStorage.getItem('fontlocalstorage')
   body.style.fontFamily = fontlocalstorage.value;
 }
+
+
+
+textarea.addEventListener("paste", function(e) {
+  e.preventDefault();
+  var text = e.clipboardData.getData("text/plain");
+  document.execCommand("insertHTML", false, text);
+  document.execCommand("enableObjectResizing", false, false);
+
+});
