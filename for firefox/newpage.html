@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newtab.txt</title>
+    <link rel="stylesheet" href="main.css">
+    <script src = "FileSaver.min.js" defer> </script>
+    <script src="javascript.js" defer></script>
+    <link rel="shortcut icon" type="image/x-icon" id="favicon">
+</head>
+
+<body id="body">
+
+<p contenteditable="true" id="textarea"></p>
+
+<div class="hoverchecker" id="hoverchecker"> 
+  <div class="sidebar" id="sidebar">
+    <button class="sidebutton" id="darkmodebtn">darkmode toggle
+      <span class="text"> alt+q</span>
+    </button>
+    <button class="sidebutton" id='downloadtxt'>download text
+      <span class="text"> ctrl+s</span>
+    </button>
+    <button class="sidebutton" id="changefont">change font</button>
+    <hr class="divider">
+    <button class="sidebutton" id="madeby">made by <a href="https://github.com/sreeadithya" target='_blank'>translate</a> </button>
+    <button class="sidebutton" id="coffee"><a href="https://ko-fi.com/translate" target='_blank'>buy me a coffee</a> </button>
+    <button class="sidebutton" id="text">ctrl+q to blur</button>
+  </div>
+</div>
+
+<div class="fontsidebar" id="fontsidebar">
+  <select name="font" id="dropdown" class="dropdown">
+    <option class="fontoptions" value='times new roman'>times new roman</option>
+    <option class="fontoptions" value="arial">arial</option>
+    <option class="fontoptions" value="verdana">verdana</option>
+    <option class="fontoptions" value="lucida console">lucida console</option>
+    <option class="fontoptions" value="century gothic">century gothic</option>
+    <option class="fontoptions" value="helvetica">helvetica</option>
+    <option class="fontoptions" value="courier new">courier new</option>
+    <option class="fontoptions" value="tahoma">tahoma</option>
+    <option class="fontoptions" value="trebuchet ms">trebuchet ms</option>
+    <option class="fontoptions" value="calibri">calibri</option>
+    <option class="fontoptions" value="cambria">cambria</option>
+    <option class="fontoptions" value="ms sans serif">ms sans serif</option>
+  </select>
+</div>
+
+</body>
+</html>
