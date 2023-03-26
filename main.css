@@ -3,10 +3,8 @@
   font-size: 1em;
 }
 
-
 body {
-    font-family: 'Times New Roman';
-
+  font-family: 'Times New Roman';
 }
 
 a {
@@ -14,21 +12,20 @@ a {
 }
 
 #textarea {
-    width: calc(100vw - 4em);
-    height: calc(100vh - 2em);
-    font-size: 2em;
-    color: black;
-    padding-left: 1em;
+  width: calc(100vw - 4em);
+  height: calc(100vh - 2em);
+  font-size: 2em;
+  color: black;
+  padding-left: 1em;
 
-    padding-top: 0em;
-    margin: none;
-    border: none;
-    outline: none;
-    resize: none;
-    background-color: #FFFFFF00;
-    font-family: inherit;
-
-  }
+  padding-top: 0em;
+  margin: none;
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: #FFFFFF00;
+  font-family: inherit;
+}
 
 .blur {
   filter: blur(7px);
@@ -39,7 +36,6 @@ button {
   text-align: left;
   font-family: inherit;
 }
-
 
 .sidebar {
   top: 0;
@@ -62,7 +58,6 @@ button {
   font-size: 1em;
 }
 
-
 .fontsidebar {
   top: 5.4em;
   left: 17.5em;
@@ -77,9 +72,6 @@ button {
   visibility: hidden;
 
 }
-
-
-
 
 #dropdown {
   background-color: #FFFFFF00;
@@ -97,7 +89,6 @@ button {
 }
 
 .hoverchecker {
-
   top: 0;
   left: 0;
   width: 1.4vw;
@@ -121,7 +112,6 @@ button {
   margin-top: -0.4vh;
   margin-bottom: -0.4vh;
 }
-
 
 #madeby, #coffee, #text {
   cursor: auto;
@@ -147,8 +137,8 @@ button {
   from {left: -17em;
   opacity: 0%;}
 
-  to {left: 0em
-  opacity:100%}
+  to {left: 0em;
+  opacity: 100%;}
 }
 
 @keyframes out {
