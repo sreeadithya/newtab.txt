@@ -1,3 +1,5 @@
+ `now available for firefox at: https://addons.mozilla.org/en-GB/firefox/addon/newtab-txt/`
+
 yo welcome to newtab.txt
 
 its an ultra simple and lightweight product that i’ve built where you can just write shit down in the new tab. works on basically any browser and without an internet connection. i just released the final 1.0 and i love how it turned out\
@@ -27,7 +29,7 @@ i wont be developing this further since i feel the product has all the features 
 
 to install:
 
-1. download the latest .zip from the releases page
+1. download the latest .zip from the [releases page](https://github.com/sreeadithya/newtab.txt/releases)
 2. go to the extensions page in your browser (chrome://extensions or edge://extensions or opera://extensions)
 3. turn on developer mode in the top right corner
 4. drag and drop that .zip
