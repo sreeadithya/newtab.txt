@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" id="favicon" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.counter.dev/script.js"
+      data-id="2b931ae8-ba3b-4013-afd8-c76e86e69d6f"
+      data-utcoffset="6"
+    ></script>
+    <title>newtab.txt</title>
+  </head>
+  <body>
+    <div id="mainDiv">
+      <p>
+        yo welcome to newtab.txt - its an ultra simple and lightweight product
+        that i’ve built where you can just write shit down in the new tab. works
+        on basically any browser and without an internet connection.
+        <br /><br />
+        the entire project is available on github
+        <a href="https://github.com/sreeadithya/newtab.txt/" target="_blank"
+          >here</a
+        ><br />
+        behance page is
+        <a
+          href="https://www.behance.net/gallery/171945215/newtabtxt-a-lightweight-notepad-for-your-browser"
+          target="_blank"
+          >here</a
+        >
+        <br /><br />
+      </p>
+
+      <p style="font-size: 20px">↓ scroll down</p>
+
+      <div id="cropDiv">
+        <img src="main img-min.jpg" alt="product image" id="mainImage" />
+      </div>
+      <div id="listFeatures">
+        <div class="leftAlign">
+          <p>
+            ✦ all your text is stored and stays there even if you close the tab
+          </p>
+        </div>
+
+        <div class="rightAlign">
+          <p>✦ bold italic and underline functionality</p>
+        </div>
+        <div class="leftAlign">
+          <p>✦ hover to the top left of the screen for the sidebar!</p>
+        </div>
+        <div class="rightAlign"><p>✦ beautiful darkmode with alt + q</p></div>
+        <div class="leftAlign">
+          <p>✦ quickly blur your screen if someone comes around with ctrl +q</p>
+        </div>
+
+        <div class="rightAlign">
+          <p>✦ download your text as a .txt file with ctrl + s</p>
+        </div>
+
+        <div class="leftAlign">
+          <p>✦ change the font to fit your aesthetic</p>
+        </div>
+      </div>
+
+      <p class="bigText" style="padding-top: 30px">download</p>
+
+      <p>
+        for firefox, go to
+        <a
+          href="https://addons.mozilla.org/en-GB/firefox/addon/newtab-txt/"
+          target="_blank"
+          >this addons page</a
+        >
+        <br />
+        <br />
+        for other browsers, follow this
+      </p>
+
+      <ul>
+        <li>
+          <p>
+            download
+            <a
+              href="https://github.com/sreeadithya/newtab.txt/releases/download/v1.1.0/newtab.txt.1.1.0.zip"
+              target="_blank"
+              >latest version .zip</a
+            >
+            (11.2 KB)
+          </p>
+        </li>
+        <li>
+          <p>
+            go to the extensions page in your browser (chrome://extensions or
+            edge://extensions or opera://extensions) based on your browser
+          </p>
+        </li>
+        <li>
+          <p>turn on developer mode in the top right corner</p>
+        </li>
+        <li>
+          <p>drag and drop that .zip</p>
+        </li>
+      </ul>
+
+      <div id="bottomElements">
+        <a href="https://translate.lol" target="_blank" style="margin: 0px"
+          ><p>made by translate</p></a
+        >
+
+        <a href="#" style="text-decoration: none" id="backToTop"><p>↑</p></a>
+
+        <a
+          href="https://ko-fi.com/translate"
+          target="_blank"
+          style="margin: 0px"
+          ><p>buy me a coffee</p></a
+        >
+      </div>
+    </div>
+    <script>
+      var favicon = document.getElementById("favicon");
+      var browserIsDark = window.matchMedia("(prefers-color-scheme: dark)");
+      if (browserIsDark.matches) {
+        favicon.href = "128-light.png";
+      } else {
+        favicon.href = "128.png";
+      }
+    </script>
+  </body>
+</html>

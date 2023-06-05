@@ -1,0 +1,91 @@
+@font-face {
+  font-family: AppleGaramond;
+  src: url(AppleGaramond.ttf);
+}
+
+html * {
+  font-family: AppleGaramond;
+}
+
+body {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  font-size: 28px;
+  font-family: AppleGaramond;
+}
+
+.bigText {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+#mainDiv {
+  padding-top: 80px;
+  width: 900px;
+}
+
+#mainImage {
+  padding-top: 30px;
+  width: 100%;
+}
+
+.leftAlign {
+  text-align: left;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+#listFeatures {
+  padding-top: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+#bottomElements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 80px;
+  padding-top: 30px;
+}
+
+a {
+  color: inherit;
+}
+
+@media only screen and (max-width: 1158px) {
+  #mainDiv {
+    width: 80vw;
+  }
+  p {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #backToTop {
+    display: none !important;
+  }
+  #bottomElements {
+    flex-direction: column;
+  }
+  #cropDiv {
+    width: 110%;
+    overflow: hidden;
+  }
+  #mainImage {
+    width: 180%;
+  }
+}
+
+#backToTop {
+  display: block;
+}
